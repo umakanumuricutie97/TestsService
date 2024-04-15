@@ -19,7 +19,7 @@ function QuizPage() {
   };
 
   const submitAnswer = () => {
-    axios.post(`http://localhost:8081/quiz/${questionNumber}/answer`, answer)
+    axios.post(`http://3.145.202.12:8081/quiz/${questionNumber}/answer`, answer)
       .then(response => {
         setResult(response.data);
       })
