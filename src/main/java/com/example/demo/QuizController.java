@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/quiz")
-@CrossOrigin(origins = "http://3.145.202.12:3000")
+@CrossOrigin(origins = "*")
 public class QuizController {
     private final QuestionService questionService;
 
