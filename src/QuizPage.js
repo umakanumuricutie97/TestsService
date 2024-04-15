@@ -9,7 +9,7 @@ function QuizPage() {
   const [result, setResult] = useState('');
 
   const fetchQuestion = () => {
-    axios.get(`http://localhost:8081/quiz/${questionNumber}`)
+    axios.get(`http://3.145.202.12:8081/quiz/${questionNumber}/answer`)
       .then(response => {
         setQuestionText(response.data);
       })
