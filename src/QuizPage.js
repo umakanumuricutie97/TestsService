@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function QuizPage() {
-  const [questionNumber, setQuestionNumber] = useState('');
+  const [questionNumber, setQuestionNumber] = useState('1'); // Hardcoded value
+  //const [questionNumber, setQuestionNumber] = useState('');
   const [questionText, setQuestionText] = useState('');
   const [answer, setAnswer] = useState('');
   const [result, setResult] = useState('');
